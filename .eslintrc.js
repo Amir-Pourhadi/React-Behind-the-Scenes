@@ -16,12 +16,10 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    rules: {
-      "react/prop-types": ["off"],
-      indent: ["error", 2],
-      "linebreak-style": ["error", "unix"],
-      quotes: ["error", "double"],
-      semi: ["error", "always"]
-    }
+    "react/prop-types": ["off"],
+    indent: ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    quotes: ["error", "double"],
+    semi: ["error", "always"]
   }
 };

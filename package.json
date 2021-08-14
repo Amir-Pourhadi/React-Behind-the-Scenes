@@ -11,7 +11,10 @@
   },
   "nodemonConfig": {
     "restartable": "rs",
-    "delay": "2500"
+    "delay": "2500",
+    "env": {
+      "PORT": "8080"
+    }
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

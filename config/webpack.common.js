@@ -7,33 +7,33 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name].[contenthash].js",
-    publicPath: ""
+    publicPath: "",
   },
   devServer: {
-    open: true
+    open: true,
   },
   module: {
     rules: [
       {
         use: "babel-loader",
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         use: ["style-loader", "css-loader", "sass-loader"],
-        test: /\.(css|scss|sass)$/
+        test: /\.(css|scss|sass)$/,
       },
       {
         type: "asset",
-        test: /\.(png|svg|jpg|jpeg|gif)$/i
-      }
-    ]
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      },
+    ],
   },
   stats: {
-    children: true
+    children: true,
   },
   resolve: {
-    extensions: [".js", ".json", ".jsx", ".ejs"]
+    extensions: [".js", ".json", ".jsx"],
   },
-  plugins: [new CleanWebpackPlugin()]
+  plugins: [new CleanWebpackPlugin()],
 };

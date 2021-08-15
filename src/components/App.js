@@ -1,7 +1,8 @@
 export default function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <h2>change to React App</h2>
+      <h3>Date : {new Date().toDateString()}</h3>
     </div>
   );
 }
